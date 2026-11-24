@@ -1,0 +1,19 @@
+
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { ccc } from "@ckb-ccc/connector-react";
+import App from "./App";
+import "./index.css";
+
+ReactDOM.createRoot(
+  document.getElementById("root")!
+).render(
+  <React.StrictMode>
+    <ccc.Provider
+      name="CKBuilder Wallet Integration"
+      defaultClient={new ccc.ClientPublicTestnet()}
+    >
+      <App />
+    </ccc.Provider>
+  </React.StrictMode>
+);

@@ -1,0 +1,10 @@
+# Dependencies & Build Outputs
+**/node_modules/
+**/dist/
+**/.parcel-cache/
+
+# Logs & Environment
+*.log
+.DS_Store
+.env
+.env.*
